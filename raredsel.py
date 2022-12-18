@@ -52,7 +52,9 @@ for i in range(1, 592):
         d['link'] = link
         dict = pd.DataFrame(d, index=[0])
         df = pd.concat([df, dict], ignore_index=True)
-        df.to_csv('/home/me/Documents/Internships/data-scraping/data.csv', index=False)
 
     driver.find_element(By.XPATH, '/html/body/app-root/ng-component/div[2]/div/div/div/div/div[2]/div[3]/div/a[2]').click()
+
+df.to_csv('/home/me/Documents/Internships/data-scraping/data.csv', index=False)
+
 driver.close()
