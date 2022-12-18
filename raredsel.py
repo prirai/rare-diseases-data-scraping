@@ -30,7 +30,15 @@ try:
 except TimeoutException:
     driver.quit()
 
+SAVE_INTERVAL = 50
+SAVE_FILE_PATH = 'disease_links.csv'
+
+i = 0
 while True:
+    i += 1
+    if i % 50 == 0:
+        df.to_csv(SAVE_FILE_PATH, index=False)
+
     url_link = driver.current_url
     print(url_link)
     s1 = BeautifulSoup(driver.page_source, 'html.parser')
@@ -56,6 +64,6 @@ while True:
     except:
         break
 
-df.to_csv('/home/me/Documents/Internships/data-scraping/data.csv', index=False)
+df.to_csv(SAVE_FILE_PATH, index=False)
 
 driver.close()
