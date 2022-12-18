@@ -4,19 +4,19 @@
 
 * Book - Ontologies with Python - Apress
   
-  ## Orphacode
+## Orphacode
 
 * https://dataviz.orphacode.org/
 
 * https://api.orphacode.org/
   
-  ## Orphadata
+## Orphadata
 
 * https://www.orphadata.com/pack-nomenclature/
 
 * https://www.orphadata.com/docs/ORPHAnomenclaturexmlcontent.pdf
   
-  ## Orphanet
+## Orphanet
 
 * [Orphanet: Classifications](https://www.orpha.net/consor/cgi-bin/Disease_Classif.php?lng=EN&data_id=181&PatId=11592&search=Disease_Classif_Simple&new=1)
 
@@ -26,15 +26,15 @@
 
 * https://www.orpha.net/orphacom/cahiers/docs/GB/List_of_rare_diseases_in_alphabetical_order.pdf
   
-  ## Biomedcentral
+## Biomedcentral
 
 * https://ojrd.biomedcentral.com/articles/10.1186/s13023-021-01741-4
   
-  ## JuniperHealth
+## JuniperHealth
 
 * [Index of /tcrd/download](http://juniper.health.unm.edu/tcrd/download/)
   
-  ## ProteinGraphML
+## ProteinGraphML
 
 * [GitHub - unmtransinfo/ProteinGraphML: Protein Graph in Python for MetaPath-ML and more.](https://github.com/unmtransinfo/ProteinGraphML)
 
