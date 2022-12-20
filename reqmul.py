@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 from concurrent.futures import ThreadPoolExecutor
 
-d1 = pd.read_csv('../../data.csv')
+d1 = pd.read_csv('disease_links.csv')
 
 base_url = "https://rarediseases.info.nih.gov/"
 links = []
