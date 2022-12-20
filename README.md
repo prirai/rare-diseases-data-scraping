@@ -6,7 +6,7 @@
 ----
 |File|Purpose|
 |--|--|
-`links.md` | linksof interest
+`links.md` | links of interest
 `disease_links_scraper.py` | extracts the big list from https://rarediseases.info.nih.gov/diseases.
 `disease_links.csv` | data extracted using the above script
 `scrape_specific_page.ipynb` | Scrapes a given page for disease details
