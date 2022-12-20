@@ -17,8 +17,6 @@ from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 
-no_of_pages = 591
-
 base_url = "https://rarediseases.info.nih.gov/diseases"
 
 data = []
@@ -32,7 +30,15 @@ try:
 except TimeoutException:
     driver.quit()
 
-for i in range(1, 592):
+SAVE_INTERVAL = 50
+SAVE_FILE_PATH = 'disease_links.csv'
+
+i = 0
+while True:
+    i += 1
+    if i % 50 == 0:
+        df.to_csv(SAVE_FILE_PATH, index=False)
+
     url_link = driver.current_url
     print(url_link)
     s1 = BeautifulSoup(driver.page_source, 'html.parser')
@@ -52,7 +58,12 @@ for i in range(1, 592):
         d['link'] = link
         dict = pd.DataFrame(d, index=[0])
         df = pd.concat([df, dict], ignore_index=True)
-        df.to_csv('/home/me/Documents/Internships/data-scraping/data.csv', index=False)
 
-    driver.find_element(By.XPATH, '/html/body/app-root/ng-component/div[2]/div/div/div/div/div[2]/div[3]/div/a[2]').click()
+    try:
+        driver.find_element(By.XPATH, '/html/body/app-root/ng-component/div[2]/div/div/div/div/div[2]/div[3]/div/a[2]').click()
+    except:
+        break
+
+df.to_csv(SAVE_FILE_PATH, index=False)
+
 driver.close()
