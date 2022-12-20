@@ -7,7 +7,7 @@
 |File|Purpose|
 |--|--|
 `links.md` | linksof interest
-`disease_links_scrapper.py` | extracts the big list from https://rarediseases.info.nih.gov/diseases.
+`disease_links_scraper.py` | extracts the big list from https://rarediseases.info.nih.gov/diseases.
 `disease_links.csv` | data extracted using the above script
 `scrape_specific_page.ipynb` | Scrapes a given page for disease details
 `reqmul.py` | Requests with multithreading - made to save all the 5910 pages offline as HTML for easy scraping later.
