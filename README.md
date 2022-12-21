@@ -1,6 +1,7 @@
 # rare-diseases-data-scraping
 
 Data scraped from - https://rarediseases.info.nih.gov
+
 `data1.csv` is the currently incomplete detailed description about the diseases.
 
 ## File and their purpose
